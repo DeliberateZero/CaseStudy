@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.casestudy.StaffLogin">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="@string/hello_blank_fragment"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+        tools:text="Admin Controls" />
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/loginButton"
+        android:layout_alignLeft="@+id/passInput"
+        android:layout_alignStart="@+id/passInput" />
+
+    <EditText
+        android:id="@+id/passInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="tryLogin"
+        android:text="Button"
+        tools:text="Log In"
+        android:layout_below="@+id/passInput"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
